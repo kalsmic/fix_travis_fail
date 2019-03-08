@@ -1,7 +1,7 @@
 language: python
 
 python:
-  - "3.4"
+  - "3.6"
 
 services: postgresql
 
@@ -10,8 +10,8 @@ env:
     - DJANGO_SETTINGS_MODULE="questioner.travis_ci_settings"
     # - PYTHONPATH="/home/travis/build/AtamaZack/questioner"
     - PIP_USE_MIRRORS=true
-  matrix:
-    - DJANGO=1.7 DB=postgresql
+#   matrix:
+#     - DJANGO=1.7 DB=postgresql
 
 #commands to install dependencies
 install:
